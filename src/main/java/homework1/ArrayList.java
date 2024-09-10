@@ -25,13 +25,15 @@ public class ArrayList<T> {
     private T[] elements;
     private int elementsCount;
     private int arrayCapacity;
+    private static final int INITIAL_VALUE_OF_ARRAY_CAPACITY = 10;
+
 
     /**
      * Конструктор по умолчанию, создающий {@code ArrayList} с начальной
      * вместимостью 10.
      */
     public ArrayList() {
-        this(10);
+        this(INITIAL_VALUE_OF_ARRAY_CAPACITY);
     }
 
     /**
